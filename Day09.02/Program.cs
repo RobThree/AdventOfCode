@@ -14,7 +14,7 @@ class Program
         var matrix = distances.ToDictionary(k => k.F + "☃" + k.T, (x) => x.D);
         var perms = Permutations(distances.Select(p => p.F).Distinct().ToArray()).ToArray();
 
-        Console.WriteLine($@"Shortest: {perms.Select(p =>
+        Console.WriteLine($@"Longest: {perms.Select(p =>
         {
             var d = 0;
             for (var i = 1; i < p.Length; i++)
