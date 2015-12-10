@@ -7,7 +7,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        //TODO: Use all cores for speedup...
         var h = MD5.Create();
         var input = Encoding.ASCII.GetBytes("yzbqklnj");
         var i = 0;
